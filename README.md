@@ -2,7 +2,7 @@ jQuery Mobile - Notice Plugin
 ==================
 
 ###demo
-[See a demo](https://github.com/is8r/jquerymobile-notice)
+[See a demo](http://is8r.github.io/jquerymobile-notice/htdocs/)
 
 ![qrcode](https://cloud.githubusercontent.com/assets/822147/3407382/815568de-fda9-11e3-8230-7cf1bcd38dea.png)
 
