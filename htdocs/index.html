@@ -31,7 +31,7 @@
   $(function() {
     
     //'add'
-    $('a.js-success').click(function() {
+    $('.js-success').click(function() {
       $.mobile.notice({
         type: 'success',
         title: 'Success',
@@ -39,7 +39,7 @@
       });
       return false;
     });
-    $('a.js-error').click(function() {
+    $('.js-error').click(function() {
       $.mobile.notice({
         type: 'error',
         title: 'Error',
@@ -50,7 +50,8 @@
   
   });
 
-  // --></script></head>
+  // --></script>
+</head>
 <body>
 	
 	<div data-role="page">
@@ -89,7 +90,7 @@
 			
 			<p><i>Call Method：</i></p>
 			
-			<div class="ui-body ui-body-f">
+			<div class="ui-body">
 				<a href="#" class="ui-btn js-success">$(document).notice('show', {type:'success'})</a> 
 				<a href="#" class="ui-btn js-error">$(document).notice('show', {type:'error'})</a>
 			</div>
