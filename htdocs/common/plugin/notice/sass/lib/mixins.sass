@@ -1,0 +1,48 @@
+
+//----------------------------------------------------------------------
+//css3
+
+
+//	@include alpha(0.80)
+=alpha($val)
+	filter: alpha(opacity=$val*100)
+	-moz-opacity: $val
+	opacity: $val
+
+
+//	@include round(4px)
+=round($val)
+	border-radius: $val
+	-webkit-border-radius: $val
+	-moz-border-radius: $val
+
+
+//	@include shadow(1px 1px 3px #000)
+=shadow($val)
+	-moz-box-shadow: $val
+	-webkit-box-shadow: $val
+
+//----------------------------------------------------------------------
+//set
+
+
+//	@include text-shadow-black
+=text-shadow-black($h: 1px, $v: 1px, $c: rgba( 255, 255, 255, 0.2), $b: 0px)
+	$value: $h $v $b $c
+	-moz-text-shadow: $value
+	-webkit-text-shadow: $value
+	-o-text-shadow: $value
+	text-shadow: $value
+
+//	@include text-shadow-white
+=text-shadow-white($h: -1px, $v: -1px, $c: rgba( 0, 0, 0, 0.2), $b: 0px)
+	$value: $h $v $b $c
+	-moz-text-shadow: $value
+	-webkit-text-shadow: $value
+	-o-text-shadow: $value
+	text-shadow: $value
+
+//	@include shadow-gray
+=shadow-gray
+	@include shadow(-1px -1px 3px #000)
+

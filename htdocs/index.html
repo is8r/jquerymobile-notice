@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+  <title>jQuery Mobile</title>
+  
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet"  href="common/themes/default/jquery.mobile-1.4.2.min.css">
+  <script src="common/jquery.mobile/jquery.js"></script>
+  <script src="common/jquery.mobile/jquery.mobile-1.4.2.min.js"></script>
+
+  <!-- jQuery Mobile - Badge Plugin -->
+  <script src="common/plugin/notice/js/jquery.mobile.notice.js"></script>
+  <link href="common/plugin/notice/css/jquery.mobile.notice.css" rel="stylesheet" />
+  
+  <style type="text/css">
+    h1 {overflow: visible !important;white-space: normal !important;}
+    hr {border: none;}
+    table { width:100%; border-bottom:1px solid #ccc; }
+    th { text-align:left; width: 30%; }
+    th, td { vertical-align:top; border-top:1px solid #ccc; padding: 6px 10px 4px 0; }
+    .footer { font-size: 10px;text-align: center; }
+    .ui-header .ui-title { font-size: 12px;margin: 0 10px; }
+  </style>
+  
+  <script type="text/javascript"><!--
+  
+  //plugin - load
+  $(function() {
+    
+    //'add'
+    $('a.js-success').click(function() {
+      $.mobile.notice({
+        type: 'success',
+        title: 'Success',
+        content: 'Success content. Success content. Success content. Success content. Success content.Success content. Success content. Success content. Success content. Success content.Success content. Success content. Success content. Success content. Success content.'
+      });
+      return false;
+    });
+    $('a.js-error').click(function() {
+      $.mobile.notice({
+        type: 'error',
+        title: 'Error',
+        content: 'Error content. Error content. Error content. Error content. Error content.Error content. Error content. Error content. Error content. Error content.Error content. Error content. Error content. Error content. Error content.'
+      });
+      return false;
+    });
+  
+  });
+
+  // --></script></head>
+<body>
+	
+	<div data-role="page">
+			
+    <div data-role="header">
+			<h1>Jquery Mobile Notification</h1>
+		</div>
+		
+    <div role="main" class="ui-content">
+			
+			<h2>jQuery Mobile - Notice Plugin</h2>
+			<p>Notification plug-in for jQuery Mobile.</p>
+			<hr />
+			<p><i>data-notice：</i></p>
+			<div class="ui-body ui-body-f">
+				<a href="#" class="ui-btn" data-notice="success" data-notice-title="Success" data-notice-content="Success content.">Success</a> 
+				<a href="#" class="ui-btn" data-notice="error" data-notice-title="Error" data-notice-content="Error content.">Error</a> 
+			</div>
+			<hr />
+			
+			<p><i>Data- attribute reference：</i></p>
+			<table>
+				<tr>
+					<th>data-notice</th>
+					<td>success | <strong>error</strong></td>
+				</tr>
+				<tr>
+					<th>data-notice-title</th>
+					<td>Notice title</td>
+				</tr>
+				<tr>
+					<th>data-notice-content</th>
+					<td>Notice content.</td>
+				</tr>
+			</table>
+			
+			<p><i>Call Method：</i></p>
+			
+			<div class="ui-body ui-body-f">
+				<a href="#" class="ui-btn js-success">$(document).notice('show', {type:'success'})</a> 
+				<a href="#" class="ui-btn js-error">$(document).notice('show', {type:'error'})</a>
+			</div>
+			<hr />
+			<p><i>Options：</i></p>
+			<table>
+				<tr>
+					<th>type</th>
+					<td>success | <strong>error</strong></td>
+				</tr>
+				<tr>
+					<th>title</th>
+					<td>Notice title</td>
+				</tr>
+				<tr>
+					<th>content</th>
+					<td>Notice content.</td>
+				</tr>
+				<tr>
+					<th>theme</th>
+					<td>'notice'</td>
+				</tr>
+				<tr>
+					<th>time</th>
+					<td>1200</td>
+				</tr>
+				<tr>
+					<th>speed</th>
+					<td>300</td>
+				</tr>
+			</table>
+				
+		</div>
+		
+		<div data-role="footer" class="footer">
+			<p>&copy; copyright</p>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
